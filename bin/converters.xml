@@ -1,0 +1,19 @@
+<? xml version = "1.0" ?>
+<converters>
+
+	<converter>
+		<name>MPL-LG-2</name>
+		<mass>3500</mass>
+		<output>
+			<type>Supply</type>
+			<amount>9</amount>
+		</output>
+		<input>
+			<RessourceFlow>
+				<type>Mulch</type>
+				<amount>18</amount>
+			</RessourceFlow>
+		</input>
+	</converter>
+
+</converters>
