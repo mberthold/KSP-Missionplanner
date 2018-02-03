@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><!--The order in wich the Elements occur must be kept!-->
+<Scenario>
+	<munch>1.8</munch>
+	<length_of_day>6.0</length_of_day></Scenario>
