@@ -25,7 +25,7 @@ public class Mission {
 	public Mission() {
 		System.out.println("Creating new Mission...");
 		
-		getScenario();
+		retrieveScenario();
 	}
 	
 	public static void main(String arg[]) {
@@ -34,7 +34,7 @@ public class Mission {
 		System.out.println("Terminated.");
 	}
 	
-	private void getScenario() {
+	private void retrieveScenario() {
 		String filename;
 		
 		// Get filename from user.
@@ -77,4 +77,40 @@ public class Mission {
 		
 	}
 	
+	private void retrieveConverters () {
+		String filename;
+		
+		System.out.println("Enter converters-file...");
+		try {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			String s = br.readLine();
+			if (s.endsWith(".xml")){
+				filename = s;
+			}
+			else {
+				filename = "converters.xml";
+			}
+		} catch (IOException e){
+			System.out.println("IOExpetion! Could not read string!");
+			filename = "scenario.xml";
+		}
+		
+		String basePath = new File("").getAbsolutePath();
+		try {
+			File scen = new File(basePath+"/res/"+filename);
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+	        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+	        Document doc = dBuilder.parse(scen);
+	        doc.getDocumentElement().normalize();
+	        NodeList nLst = doc.getElementsByTagName("converter");
+       
+	        for (int temp = 0; temp < nLst.getLength(); temp++) {
+	        	Converter conv = new Converter(nLst.item(temp));
+	        	this availableConverters.append(conv);
+	        }
+
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

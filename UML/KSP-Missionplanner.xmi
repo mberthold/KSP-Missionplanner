@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XMI timestamp="2018-02-03T12:05:11" xmi.version="1.2" verified="false" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
+<XMI timestamp="2018-02-03T14:11:04" xmi.version="1.2" verified="false" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
  <XMI.header>
   <XMI.documentation>
    <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
@@ -45,7 +45,8 @@
         <UML:Attribute visibility="private" type="pjU2DKzFJm1K" isSpecification="false" name="used_converters" xmi.id="zRVohoea7l0S"/>
         <UML:Operation visibility="public" isQuery="false" isSpecification="false" isRoot="false" isAbstract="false" comment="The constructor" name="Mission" isLeaf="false" xmi.id="CoaL9iionJke"/>
         <UML:Operation visibility="public" isQuery="false" isSpecification="false" isRoot="false" isAbstract="false" name="main" isLeaf="false" xmi.id="mZvFDpFJ7vbN"/>
-        <UML:Operation visibility="public" isQuery="false" isSpecification="false" isRoot="false" isAbstract="false" comment="List format: &lt;much, length_of_day>" name="getScenario" isLeaf="false" xmi.id="APD9YO17HUWb"/>
+        <UML:Operation visibility="private" isQuery="false" isSpecification="false" isRoot="false" isAbstract="false" comment="List format: &lt;much, length_of_day>" name="retrieveScenario" isLeaf="false" xmi.id="APD9YO17HUWb"/>
+        <UML:Operation visibility="private" isQuery="false" isSpecification="false" isRoot="false" isAbstract="false" name="retrieveConverters" isLeaf="false" xmi.id="9b1wgEXYa7j3"/>
        </UML:Classifier.feature>
       </UML:Class>
       <UML:Class visibility="public" namespace="Logical View" isSpecification="false" isRoot="false" isAbstract="false" comment="The converter should be able to get the information out of the XML" name="Converter" isLeaf="false" xmi.id="ucmSART0PXis">
@@ -113,12 +114,13 @@
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams>
-       <diagram snapcsgrid="0" linewidth="0" isopen="1" showops="1" zoom="93,57620873536673" snapy="25" showpackage="1" localid="-1" showattsig="1" type="1" griddotcolor="#d3d3d3" snapx="25" documentation="" backgroundcolor="#ffffff" snapgrid="0" fillcolor="#ffff00" xmi.id="prYRfGFzOohu" textcolor="#000000" showscope="1" showatts="1" showgrid="0" usefillcolor="1" showopsig="1" showstereotype="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showattribassocs="1" name="class diagram" showpubliconly="0" canvaswidth="875.876" canvasheight="345.188">
+       <diagram snapcsgrid="0" linewidth="0" isopen="1" showops="1" zoom="80,86956521739131" snapy="25" showpackage="1" localid="-1" showattsig="1" type="1" griddotcolor="#d3d3d3" snapx="25" documentation="" backgroundcolor="#ffffff" snapgrid="0" fillcolor="#ffff00" xmi.id="prYRfGFzOohu" textcolor="#000000" showscope="1" showatts="1" showgrid="0" usefillcolor="1" showopsig="1" showstereotype="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showattribassocs="1" name="class diagram" showpubliconly="0" canvaswidth="1580.76" canvasheight="688.339">
         <widgets>
-         <classwidget showopsigs="601" isinstance="0" showattsigs="601" usesdiagramfillcolor="0" linewidth="0" usesdiagramusefillcolor="0" showpackage="1" localid="ZSIGWHG4uahw" width="282" showattributes="1" fillcolor="#ffff00" xmi.id="EJ4Ze8LYRA44" textcolor="#000000" y="-1059" x="-1722" showscope="1" showoperations="1" showstereotype="1" usefillcolor="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showpubliconly="0" height="180"/>
+         <classwidget showopsigs="601" isinstance="0" showattsigs="601" usesdiagramfillcolor="0" linewidth="0" usesdiagramusefillcolor="0" showpackage="1" localid="ZSIGWHG4uahw" width="282" showattributes="1" fillcolor="#ffff00" xmi.id="EJ4Ze8LYRA44" textcolor="#000000" y="-1059" x="-1722" showscope="1" showoperations="1" showstereotype="1" usefillcolor="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showpubliconly="0" height="198"/>
          <classwidget showopsigs="601" isinstance="0" showattsigs="601" usesdiagramfillcolor="0" linewidth="0" usesdiagramusefillcolor="0" showpackage="1" localid="JMo5AdVX9njP" width="259" showattributes="1" fillcolor="#ffff00" xmi.id="ucmSART0PXis" textcolor="#000000" y="-1058.53" x="-1334.58" showscope="1" showoperations="1" showstereotype="1" usefillcolor="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showpubliconly="0" height="108"/>
          <classwidget showopsigs="601" isinstance="0" showattsigs="601" usesdiagramfillcolor="0" linewidth="0" usesdiagramusefillcolor="0" showpackage="1" localid="5snsZ8PyRqSv" width="136" showattributes="1" fillcolor="#ffff00" xmi.id="CTjkX2L3BVxf" textcolor="#000000" y="-1036.82" x="-982.124" showscope="1" showoperations="1" showstereotype="1" usefillcolor="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showpubliconly="0" height="108"/>
          <enumwidget textcolor="#000000" showstereotype="1" usefillcolor="1" linewidth="0" isinstance="0" fillcolor="#ffff00" height="162" showpackage="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" font="Noto Sans,10,-1,0,50,0,0,0,0,0" width="100" localid="FAl29HHIsHqz" y="-875.812" xmi.id="LDC3RkurMkwV" x="-962.604" linecolor="#ff0000"/>
+         <notewidget isinstance="0" usesdiagramfillcolor="0" linewidth="0" usesdiagramusefillcolor="0" localid="TBQvZNYhmlqI" noteType="0" width="400" fillcolor="#ffff00" text="The scenario is stored in an XML-File. Because it is just two numbers we won't bother making a Class for it.&#xa;Scenario:&#xa;MUNCHFAKTOR&#xa;LENGTH_OF_DAY" xmi.id="8pONKswRTyL9" textcolor="#000000" y="-1038.71" x="-2186.02" showstereotype="1" usefillcolor="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" height="114"/>
         </widgets>
         <messages/>
         <associations>
@@ -145,7 +147,7 @@
          </assocwidget>
         </associations>
        </diagram>
-       <diagram snapcsgrid="0" linewidth="0" isopen="1" showops="1" zoom="80" snapy="25" showpackage="1" localid="-1" showattsig="1" type="6" griddotcolor="#d3d3d3" snapx="25" documentation="" backgroundcolor="#ffffff" snapgrid="0" fillcolor="#ffff00" xmi.id="eXVAc12AkQIW" textcolor="#000000" showscope="1" showatts="1" showgrid="0" usefillcolor="1" showopsig="1" showstereotype="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showattribassocs="1" name="Set Scenario" showpubliconly="0" canvaswidth="728.03" canvasheight="864.901">
+       <diagram snapcsgrid="0" linewidth="0" isopen="1" showops="1" zoom="91,30434782608697" snapy="25" showpackage="1" localid="-1" showattsig="1" type="6" griddotcolor="#d3d3d3" snapx="25" documentation="" backgroundcolor="#ffffff" snapgrid="0" fillcolor="#ffff00" xmi.id="eXVAc12AkQIW" textcolor="#000000" showscope="1" showatts="1" showgrid="0" usefillcolor="1" showopsig="1" showstereotype="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showattribassocs="1" name="Set Scenario" showpubliconly="0" canvaswidth="728.03" canvasheight="864.901">
         <widgets>
          <activitywidget isinstance="0" usesdiagramfillcolor="0" linewidth="0" usesdiagramusefillcolor="0" localid="M9sbRlqHZtqP" documentation="" width="15" fillcolor="#ffff00" xmi.id="NJL4vUgYzBgb" activitytype="0" textcolor="#000000" y="-692.747" x="-1239.15" showstereotype="1" usefillcolor="1" postcondition="" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" precondition="" height="15" activityname=""/>
          <floatingtext isinstance="0" usesdiagramfillcolor="0" linewidth="0" usesdiagramusefillcolor="0" localid="Bijv61QR8G2a" role="700" width="124" fillcolor="#ffff00" text="Initial: Set Scenario" xmi.id="zqrZhiw41G7v" textcolor="#000000" posttext="" pretext="" y="-721.959" x="-1293.26" showstereotype="1" usefillcolor="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" height="22"/>
@@ -298,7 +300,7 @@
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams>
-       <diagram snapcsgrid="0" linewidth="0" isopen="1" showops="1" zoom="142" snapy="25" showpackage="1" localid="-1" showattsig="1" type="2" griddotcolor="#d3d3d3" snapx="25" documentation="" backgroundcolor="#ffffff" snapgrid="0" fillcolor="#ffff00" xmi.id="se7xoR4qmH2a" textcolor="#000000" showscope="1" showatts="1" showgrid="0" usefillcolor="1" showopsig="1" showstereotype="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showattribassocs="1" name="Process Optimize Life Support" showpubliconly="0" canvaswidth="694.441" canvasheight="287.195">
+       <diagram snapcsgrid="0" linewidth="0" isopen="1" showops="1" zoom="163,3" snapy="25" showpackage="1" localid="-1" showattsig="1" type="2" griddotcolor="#d3d3d3" snapx="25" documentation="" backgroundcolor="#ffffff" snapgrid="0" fillcolor="#ffff00" xmi.id="se7xoR4qmH2a" textcolor="#000000" showscope="1" showatts="1" showgrid="0" usefillcolor="1" showopsig="1" showstereotype="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0" linecolor="#ff0000" showattribassocs="1" name="Process Optimize Life Support" showpubliconly="0" canvaswidth="694.441" canvasheight="287.195">
         <widgets>
          <actorwidget textcolor="#000000" showstereotype="1" usefillcolor="1" linewidth="0" isinstance="0" fillcolor="#ffff00" height="38" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" font="Noto Sans,10,-1,0,50,0,0,0,0,0" width="38" localid="vv1hA1GvolF4" y="-546.667" xmi.id="i1oL3lPwPUrB" x="-2816.96" linecolor="#000000"/>
          <usecasewidget textcolor="#000000" showstereotype="1" usefillcolor="1" linewidth="0" isinstance="0" fillcolor="#ffff00" height="53" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" font="Noto Sans,10,-1,0,50,0,0,0,0,0" width="151" localid="a5JxZA9T48AE" y="-556.251" xmi.id="OvQjfK5NLriN" x="-2692.86" linecolor="#ff0000"/>
@@ -347,7 +349,7 @@
   </UML:Model>
  </XMI.content>
  <XMI.extensions xmi.extender="umbrello">
-  <docsettings viewid="prYRfGFzOohu" uniqueid="APD9YO17HUWb" documentation=""/>
+  <docsettings viewid="eXVAc12AkQIW" uniqueid="ZrnLaccgP04j" documentation=""/>
   <listview>
    <listitem id="Views" type="800" open="1">
     <listitem id="Component View" type="821" open="1"/>
@@ -356,7 +358,7 @@
     <listitem id="Logical View" type="801" open="1">
      <listitem id="yA0WIOaZAdFl" type="813" open="1"/>
      <listitem id="prYRfGFzOohu" type="807" open="0" label="class diagram"/>
-     <listitem id="ucmSART0PXis" type="813" open="1">
+     <listitem id="ucmSART0PXis" type="813" open="0">
       <listitem id="nRVlaYXa9GRu" type="815" open="0"/>
       <listitem id="m3Kwazb7yJpR" type="814" open="0"/>
       <listitem id="GFnAguYilMSJ" type="814" open="0"/>
@@ -384,11 +386,12 @@
       <listitem id="4GHp2h5KV1LS" type="814" open="0"/>
       <listitem id="OWKEFkl5UnLL" type="814" open="0"/>
       <listitem id="qx6kVmewnorQ" type="814" open="0"/>
-      <listitem id="APD9YO17HUWb" type="815" open="0"/>
       <listitem id="rj4Gt8IRYYh2" type="814" open="0"/>
       <listitem id="mZvFDpFJ7vbN" type="815" open="0"/>
       <listitem id="CoaL9iionJke" type="815" open="0"/>
       <listitem id="S1AvfahtsjQW" type="814" open="0"/>
+      <listitem id="9b1wgEXYa7j3" type="815" open="0"/>
+      <listitem id="APD9YO17HUWb" type="815" open="0"/>
       <listitem id="zRVohoea7l0S" type="814" open="0"/>
      </listitem>
      <listitem id="syKYNmaND6Bs" type="813" open="1"/>
